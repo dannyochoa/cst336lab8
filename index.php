@@ -74,7 +74,7 @@
                     
                     $.ajax({
                     type: "GET",
-                    url: "checkUsername.php",
+                    url: "inc/checkUsername.php",
                     dataType: "json",
                     data: { "username": $("#username").val() },
                     success: function(data,status) {
@@ -123,7 +123,7 @@
                     } else{
                         $.ajax({
                             type: "POST",
-                            url: "insertUser.php",
+                            url: "inc/insertUser.php",
                             dataType: "json",
                             data: { "username": $("#username").val(),
                                     "firstName": $("#firstName").val(),
